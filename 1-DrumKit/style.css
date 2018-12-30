@@ -4,12 +4,56 @@ body, html {
 }
 
 body {
-  
   background-image: url("images/party.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#keypad {
-  
+header {
+  position: absolute;
+  top: 10%; left: 50%; transform: translate(-50%, -10%);
+  width: 475px; height: 75px;
+  font-size: 500%;
+}
+
+/* Button rules */
+/* div containing table */
+#drum-container { 
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 1000px;
+  height: 100px;
+}
+
+/* The actual table */
+#drumpad{ 
+  border-collapse: separate;
+  border-spacing: 55px 0;
+}
+
+#drumpad .drums span, #drumpad .drums {
+  font-family:'Lucidia Console', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* The individ drum buttons */
+#drumpad .drums { 
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 0;
+  width: 100px; height: 100px;
+  background-color: rgba(109, 109, 109, 0.384);
+}
+
+#drumpad .drums:hover {
+  background-color: rgba(109, 109, 109, 0.664);
+}
+
+
+footer{
+  position: absolute; 
+  bottom: 5%; right: 10%;
+  color: white;
+  font-family: "Courier New";
 }
