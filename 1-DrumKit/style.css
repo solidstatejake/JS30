@@ -1,0 +1,15 @@
+/* Make sure the image spans the page */
+body, html {
+  min-height: 100%;
+}
+
+body {
+  
+  background-image: url("images/party.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#keypad {
+  
+}
