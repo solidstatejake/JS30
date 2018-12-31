@@ -1,0 +1,82 @@
+*{
+  margin: 0; padding :0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background: whitesmoke;
+  background: linear-gradient(120deg, rgb(143, 180, 196), rgb(35, 81, 102));
+  
+}
+
+#container {
+  width: 300px; height: 300px;
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+#clock-body {
+  width: 300px; height: 300px;
+  border: 3px solid whitesmoke;
+  border-radius: 150px;
+  background-color: rgba(143, 180, 196, 0.4);
+  transform: skew(-30deg);
+  box-shadow: 200px 20px 0 0 rgba(0,0,0,0.4);
+}
+
+/* The time positions on the clock */
+.markings-y {
+  position: absolute;
+  width: 5px; height: 30px;
+  background-color: whitesmoke;
+}
+
+.markings-x {
+  position: absolute;
+  width: 30px; height: 5px;
+  background-color: whitesmoke; 
+}
+.twelve, .six {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.six {
+  transform:translate(0, 270px);
+}
+
+.three, .nine {
+  top: 50%; transform: translate(0%, -1px);
+}
+
+.three {
+ transform: translate(270px, 2px);
+}
+
+/* The hands */
+
+.hand {
+  background-color: black;
+  position: absolute;
+  height: 50px;
+  left: 50%;
+  transform-origin: 0 150px;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.42,0,0.01,1.02);
+}
+
+.second {
+  background-color: red;
+  width: 3px;
+  transform: translate(3px, 0%);
+}
+
+.minute {
+  width: 6px;
+  transform: translate(3px, 0%);
+}
+
+.hour {
+  width: 10px;
+  transform: translate(3px, 0%);
+}
