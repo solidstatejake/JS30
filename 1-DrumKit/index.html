@@ -15,35 +15,44 @@
   <div id="drum-container">
     <table id="drumpad">
       <tr>
-        <td class="drums high">
-          <span>A</span><br><br>
+        <td data-key="65" class="drums high key">
+          <kbd>A</kbd><br><br>
           hi-hat
         </td>
-        <td class="drums low">
-          <span>S</span><br><br>
-          bass
+        <td data-key="83" class="drums low key">
+          <kbd>S</kbd><br><br>
+          clap
         </td>
-        <td class="drums high">
-          <span>D</span><br><br>
+        <td data-key="68" class="drums high key">
+          <kbd>D</span><br><br>
           snare
         </td>
-        <td class="drums low">
-          <span>F</span><br><br>
+        <td data-key="70" class="drums low key">
+          <kbd>F</kbd><br><br>
           kick
         </td>
-        <td class="drums misc">
-          <span>G</span><br><br>
+        <td data-key="71" class="drums misc key">
+          <kbd>G</kbd><br><br>
           triangle
         </td>
-        <td class="drums low">
-          <span>H</span><br><br>
+        <td data-key="72" class="drums low key">
+          <kbd>H</kbd><br><br>
           808
         </td>
       </tr>
     </table>
   </div>
 
-  <footer>Web Design, by Mr. Maximilian</footer>
+  <footer>Web Design, by Jacob</footer>
+
+
+  <audio data-key="65" src="sounds/hihat.wav"></audio>
+  <audio data-key="83" src="sounds/clap.wav"></audio>
+  <audio data-key="68" src="sounds/snare.wav"></audio>
+  <audio data-key="70" src="sounds/kick.wav"></audio>
+  <audio data-key="71" src="sounds/tink.wav"></audio>
+  <audio data-key="72" src="sounds/boom.wav"></audio>
+
   <script src="app.js"></script>
 </body>
 </html>
