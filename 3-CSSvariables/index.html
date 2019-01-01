@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CSS Variables</title>
+</head>
+<body>
+  <header><div><h1>CSS Variables</h1></div></header>
+
+  <section id="section-container">
+    <div id="size-container" class="slider-container">
+      <h2>SCALE</h2>
+     <input id="scale" type="range" name="scale" min="0.2" max="1.5" step="0.1" value="1.0">
+    </div>
+
+    <div id="color-container" class="slider-container">
+      <h2>COLOR</h2>
+      <input id="color" type="color" name="color" value="#6e805a">
+    </div>
+
+    <div id="blur-container" class="slider-container">
+      <h2>BLUR</h2>
+      <input id="blur" type="range" name="blur" min="0" max="25" step="0.1" value="0" data-sizing="px">
+    </div>
+  </section>  
+
+  <section id="image-container">
+    <img src="mickey.jpg">
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

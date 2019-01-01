@@ -1,0 +1,104 @@
+/* CSS variables */
+:root {
+  --color: #6e805a;
+  --scale: 1.0;
+  --blur: 10px;
+}
+
+
+/* universal rules */
+html, body {
+  background-color: rgb(64, 83, 45);
+}
+
+* {
+  margin: 0; padding: 0;
+  
+}
+
+ /* main header */
+
+header {
+  background-color: rgb(109, 128, 90);
+  width: 1000px; height: 100px;
+  margin: 20px auto;
+  left: 50%; 
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px 0 black;
+}
+
+header div {
+  margin: 10px auto;
+  width: 500px;
+  background-color: rgb(72, 75, 70);
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px 0 black;
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 400%;
+  text-align: center; vertical-align: middle;
+  width:450px; margin: auto;
+  color: var(--color);
+}
+
+/* sliders */
+
+#section-container {
+  background-color: rgb(109, 128, 90);
+  width: 1200px; height: 200px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px 0 black;
+}
+
+.slider-container {
+  background-color: rgb(72, 75, 70);
+  width: 300px; height: 150px;
+  margin: auto 50px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px 0 black;
+}
+
+.slider-container h2 {
+  color: rgb(243, 201, 12);
+  text-align: center;
+  margin: 15px 0;
+}
+
+.slider-container input {
+  width: 200px; height: 50px;
+  margin: 15px 50px;
+}
+
+#color-container input {
+  width: 200px; height: 50px;
+  margin: 15px 50px;
+}
+
+.slider-container:hover  {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 2px 0 black;
+}
+
+/* image */
+
+#image-container {
+  background-color: var(--color);
+  width: 800px; height: 600px;
+  margin: 30px auto;
+  border: 1px solid black;
+  box-shadow: 2px 2px 1px 0 black;
+  transform: scale(var(--scale));
+}
+
+#image-container img {
+  width: 750px; height: 550px;
+  margin: 25px;
+  border: 5px solid black;
+  filter: blur(var(--blur));
+}
+
