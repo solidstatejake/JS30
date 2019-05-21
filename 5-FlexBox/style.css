@@ -29,9 +29,9 @@ html{
   display: flex;  /* Nested. Each panel = a flex item && flex container */
   flex-direction: column;
   transition:
-        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        background 0.2s;
+        font-size 0.7s cubic-bezier(0.5,-1, 0.5, 2),
+        flex 0.7s cubic-bezier(0.5,-1, 0.5, 2),
+        background 0.3s;
 
 }
 
@@ -65,10 +65,12 @@ html{
   font-size: 4em;
 }
 
+/* Top and bottom words when hovered over */
 .panel.open-active {
   font-size: 50px;
 }
 
+/* Middle words when hovered over */
 .panel.active {
   flex-grow: 5;
   font-size: 6em;
